@@ -1,5 +1,5 @@
 .nav {
-  /* display: inline-block; */
+  display: inline-block;
   position: fixed;
 
   top: 0;
@@ -25,4 +25,9 @@
 }
 .nav__link:visited {
   color: white;
+}
+
+#team-name {
+  margin-right: 100px;
+  font-size: 22px;
 }
