@@ -14,10 +14,36 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!--reset CSS가 빠져있길래 추가했습니다-김래준-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
     <link rel="stylesheet" href="../css/style.css" />
   </head>
   <body>
-    <header>4JoChamChi</header>
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <span id="team-name">4JoChamChi</span>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="홈페이지html">홈</a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="특징 및 규칙.html"> 우리팀 특징 및 규칙</a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="개인페이지.html">팀원 소개</a>
+        </li>
+        <li class="nav__weather">
+          <div id="weather">
+            <span></span>
+            <span></span>
+        </li>
+        
+      </ul>
+    </nav>
     <main>
       <div class="inner">
         <!-- 카드 -->
@@ -62,5 +88,7 @@
         <button type="button" class="btn btn-dark">홈으로</button>
       </div>
     </main>
+  <script src="../js/weather.js"></script>
+
   </body>
 </html>
