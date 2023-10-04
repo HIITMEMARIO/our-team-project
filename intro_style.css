@@ -1,0 +1,84 @@
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+header {
+  height: 150px;
+  background-color: #000;
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 20px;
+  margin: 0 auto;
+}
+
+.inner {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.card-group {
+  width: 100%;
+  background-color: #d4d4d4;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.img {
+  width: 50%;
+  margin-right: 20px;
+}
+
+.card-group img {
+  display: block;
+  width: 100%;
+  margin-right: 30px;
+  border-radius: 5px;
+}
+
+.card-group h3 {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-group p {
+  color: #fff;
+  font-size: 1rem;
+}
+
+.tag-group {
+  margin-bottom: 30px;
+}
+
+.tag {
+  margin-bottom: 5px;
+}
+
+.button {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .img {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .card-group h3 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .card-group p {
+    font-size: 1rem;
+  }
+}
