@@ -6,7 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
+  background-image: url("https://images.pexels.com/photos/1615681/pexels-photo-1615681.jpeg?auto=compress&cs=tinysrgb&w=1600");
   background-position: center;
   background-size: cover;
 }
@@ -53,20 +53,22 @@
 }
 
 .text-icon {
+  
   position: relative;
   text-align: center;
 }
 
 .material-symbols-outlined {
-
+  
   padding-top: 80px;
   font-size: 28px;
-  color: #333
+  color: #fff;
 }
 
 
 
 .font-size {
+  color: #fff;
   font-size: 19px;
   padding-top: 15px;
 }
