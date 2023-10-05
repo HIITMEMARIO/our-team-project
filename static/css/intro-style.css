@@ -1,16 +1,64 @@
+:root[color-theme='dark'] {
+  --background: #000;
+  --card-bg: #fff;
+  --font-color: #fff;
+  --btn-color: #727272;
+  --tag-border: #fff;
+}
+
+:root[color-theme='light'] {
+  --black: #fff;
+  --card-bg: #d4d4d4;
+  --white: #000;
+  --btn-color: #fff;
+}
+
+html {
+  background-color: var(--background);
+}
+
 body {
   font-family: 'Nanum Gothic', sans-serif;
 }
 
+a:hover,
+a:visited,
+a:active {
+  color: white;
+}
+
 main {
-  padding: 100px 20px 20px 20px;
+  padding: 120px 20px 20px 20px;
+  background-color: var(--background);
   margin: 0 auto;
 }
 
-.dark_mode {
-  background-color: #fff;
-  padding: 10px;
+.top_btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  background-color: blue;
   border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#dark_mode_checkbox {
+  display: none;
+}
+
+.dark_mode_btn {
+  background-color: var(--btn-color);
+  padding: 10px 15px;
+  border-radius: 30px;
   cursor: pointer;
 }
 
@@ -25,7 +73,7 @@ main {
 
 .card-group {
   width: 100%;
-  background-color: #d4d4d4;
+  background-color: var(--card-bg);
   padding: 15px;
   border-radius: 5px;
   margin-bottom: 30px;
@@ -44,14 +92,14 @@ main {
 }
 
 .card-group h3 {
-  color: #fff;
+  color: black;
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
 
 .card-group p {
-  color: #fff;
+  color: black;
   font-size: 1rem;
 }
 
@@ -61,6 +109,10 @@ main {
 
 .tag {
   margin-bottom: 5px;
+}
+
+.btn {
+  border: 1px solid var(--tag-border);
 }
 
 .button {

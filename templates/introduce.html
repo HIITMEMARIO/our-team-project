@@ -7,7 +7,7 @@
     <title>사조참치</title>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav" id="top">
       <ul class="nav__list">
         <li class="nav__btn">
           <span id="team-name">4JoChamChi</span>
@@ -27,10 +27,19 @@
             <span></span>
           </div>
         </li>
-        <li><span class="dark_mode">🌝</span></li>
+        <!-- 다크모드 버튼 -->
+        <li>
+          <input type="checkbox" id="dark_mode_checkbox" />
+          <label for="dark_mode_checkbox" class="dark_mode_btn">🌝</label>
+        </li>
       </ul>
     </nav>
     <main>
+      <!-- top 버튼 -->
+      <a class="top_btn" href="#top">
+        <span>🔼</span>
+        <span>TOP</span>
+      </a>
       <div class="inner">
         <!-- 카드 -->
         <div class="card-group">
@@ -68,12 +77,13 @@
         </div>
       </div>
 
-      <!-- 버튼 -->
+      <!-- 하단 버튼 -->
       <div class="button">
         <button type="button" class="btn btn-secondary">뒤로가기</button>
         <button type="button" class="btn btn-dark">홈으로</button>
       </div>
     </main>
     <script src="../js/weather.js"></script>
+    <script src="../js/introduce.js"></script>
   </body>
 </html>
