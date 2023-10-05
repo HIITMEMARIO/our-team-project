@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../static/css/style.css" />
     <title>사조참치</title>
   </head>
-  <body>
-    <nav class="nav">
+  <body id="top">
+    <nav class="nav" id="top">
       <ul class="nav__list">
         <li class="nav__btn">
           <span id="team-name">4JoChamChi</span>
@@ -16,7 +16,7 @@
           <a class="nav__link" href="홈페이지html">홈</a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="특징 및 규칙.html"> 우리팀 특징 및 규칙</a>
+          <a class="nav__link" href="특징 및 규칙.html">우리팀 특징 및 규칙</a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="개인페이지.html">팀원 소개</a>
@@ -27,9 +27,20 @@
             <span></span>
           </div>
         </li>
+        <!-- 다크모드 버튼 -->
+        <li>
+          <input type="checkbox" id="dark_mode_checkbox" />
+          <label for="dark_mode_checkbox" class="dark_mode_btn">🌝</label>
+        </li>
       </ul>
     </nav>
     <main>
+      <!-- top 버튼 -->
+      <a class="top_btn" href="#top">
+        <span class="material-symbols-outlined top_arrow">
+          keyboard_double_arrow_up
+        </span>
+      </a>
       <div class="inner">
         <!-- 카드 -->
         <div class="card-group">
@@ -41,38 +52,45 @@
           </div>
           <div class="introduce">
             <h3>홍길동</h3>
-            <p>자기소개</p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
+              aperiam aliquam autem rerum soluta aut explicabo provident, cumque
+              voluptatibus quam.
+            </p>
           </div>
         </div>
 
         <!-- 태그 -->
         <div class="tag-group">
           <div class="tag">
-            <button type="button" class="btn btn-primary">#INFP</button>
+            <button type="button" class="btn btn-mbti">#INFP</button>
           </div>
           <div class="tag">
-            <button type="button" class="btn btn-warning">#넷플릭스</button>
-            <button type="button" class="btn btn-warning">#운동</button>
-            <button type="button" class="btn btn-warning">#영화보기</button>
-            <button type="button" class="btn btn-warning">#독서</button>
+            <button type="button" class="btn btn-habit">#넷플릭스</button>
+            <button type="button" class="btn btn-habit">#운동</button>
+            <button type="button" class="btn btn-habit">#영화보기</button>
+            <button type="button" class="btn btn-habit">#독서</button>
           </div>
           <div class="tag">
-            <button type="button" class="btn btn-success">#꾸준함</button>
-            <button type="button" class="btn btn-success">#착함</button>
+            <button type="button" class="btn btn-strength">#꾸준함</button>
+            <button type="button" class="btn btn-strength">#착함</button>
           </div>
           <div class="tag">
-            <button type="button" class="btn btn-danger">#착함</button>
-            <button type="button" class="btn btn-danger">#의사소통잘함</button>
+            <button type="button" class="btn btn-collaboration">#착함</button>
+            <button type="button" class="btn btn-collaboration">
+              #의사소통잘함
+            </button>
           </div>
         </div>
       </div>
 
-      <!-- 버튼 -->
+      <!-- 하단 버튼 -->
       <div class="button">
-        <button type="button" class="btn btn-secondary">뒤로가기</button>
-        <button type="button" class="btn btn-dark">홈으로</button>
+        <button type="button" class="btn btn-back">뒤로가기</button>
+        <button type="button" class="btn btn-home">홈으로</button>
       </div>
     </main>
     <script src="../js/weather.js"></script>
+    <script src="../js/introduce.js"></script>
   </body>
 </html>
