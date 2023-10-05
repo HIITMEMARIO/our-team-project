@@ -8,7 +8,7 @@ def home():
 
 @app.route("/card_page")
 def card_page():
-    return render_template("cardpage.html")
+    return render_template("card-page.html")
 
 
 @app.route("/card_page/mem1")
