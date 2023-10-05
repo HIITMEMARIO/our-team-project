@@ -1,8 +1,6 @@
-
-
 .container {
   position: absolute;
-  background-color:#fff;
+  background-color: #fff;
   width: 100%;
   height: 100%;
   display: flex;
@@ -25,14 +23,12 @@
   background-image: url("https://i.namu.wiki/i/OtQ7RAxKcYGW2wcPxCGaPI7C9MBgmZhr1FeChqVs7mesqE_uVp8rzdkWGt-y5x_lN5Tk2GzRnZXAQ0E1U_7JaQ.webp");
   background-position: center;
   background-size: cover;
-  transition: .3s;
-
+  transition: 0.3s;
 }
 
 .circle:hover {
   width: 550px;
   height: 550px;
-
 }
 
 /* 클릭시 카드페이지 이동  */
@@ -45,39 +41,29 @@
   padding-top: 50px;
   justify-content: center;
   align-items: center;
-  transition: .3s;
-
+  transition: 0.3s;
 }
 
 .to-card-page:hover {
   width: 550px;
   height: 550px;
-
 }
 
 .text-icon {
-  
   position: relative;
   text-align: center;
-
 }
 
 .material-symbols-outlined {
-
   padding-top: 80px;
   font-size: 28px;
   color: #fff;
-
 }
-
-
 
 .font-size {
   color: #fff;
   font-size: 15px;
   padding-top: 15px;
-
-
 }
 
 .container .gsap,
