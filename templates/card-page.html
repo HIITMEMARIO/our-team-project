@@ -7,7 +7,7 @@
     <title>사조참치</title>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav" id="top">
       <ul class="nav__list">
         <li class="nav__btn">
           <span id="team-name">4JoChamChi</span>
@@ -16,23 +16,21 @@
           <a class="nav__link" href="index.html">홈</a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="특징 및 규칙.html"> 우리팀 특징 및 규칙</a>
+          <a class="nav__link" href="card-page.html">우리팀 특징 및 규칙</a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="개인페이지.html">팀원 소개</a>
         </li>
-        <!-- <li class="nav__weather">
+        <li class="nav__weather">
           <div id="weather">
             <span></span>
             <span></span>
-        </li> -->
-        <li class="nav__btn">
-          <input
-            id="night_day"
-            type="button"
-            value="night"
-            onclick="nightDayHandler(this);"
-          />
+          </div>
+        </li>
+        <!-- 다크모드 버튼 -->
+        <li>
+          <input type="checkbox" id="dark_mode_checkbox" />
+          <label for="dark_mode_checkbox" class="dark_mode_btn">🌝</label>
         </li>
       </ul>
     </nav>
@@ -84,4 +82,6 @@
     <a id="toPersonalIntro" href="introduce.html">개인 소개 페이지</a>
   </body>
   <script src="../js/main.js"></script>
+  <script src="../js/weather.js"></script>
+  <script src="../js/introduce.js"></script>
 </html>
