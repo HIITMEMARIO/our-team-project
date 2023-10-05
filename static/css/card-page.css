@@ -1,19 +1,38 @@
+body{
+  background-color: red;
+}
+.nav {
+  z-index: 9;
+}
+
 #toPersonalIntro {
   padding-top: 200px;
   display: flex;
 }
 
 .team {
+  position: relative;
   width: 1000px;
   height: 600px;
   background-color: ivory;
-  margin: 150px auto 100px auto;
+  margin: 150px auto 0px auto;
+  border-radius: 130px;
+  opacity: 0;
+
+
+
 }
 .members {
   display: flex;
   justify-content: space-around;
+  border-radius: 10px;
 }
 
 .member {
   background-color: ivory;
+  border-radius: 10px;
+}
+
+.fade-in{
+  opacity: 0;
 }
