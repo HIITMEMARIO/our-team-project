@@ -8,3 +8,5 @@ fadeEls.forEach(function (fadeEl, index){
     opacity: 1
   })
 });
+
+

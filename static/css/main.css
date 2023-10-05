@@ -1,7 +1,6 @@
-
-
 body {
   font-family: "Nanum Gothic", sans-serif;
+
 }
 
 
@@ -20,10 +19,8 @@ body {
 /* 중앙 참치 이미지 */
 
 .circle {
+  
   border: 1px solid #0871c7;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   width: 300px;
   height: 300px;
@@ -34,8 +31,8 @@ body {
 }
 
 .circle:hover {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
   box-shadow: 0px 8px 10px 10px rgb(44, 43, 43)
 }
 
@@ -48,26 +45,24 @@ body {
   height: 300px;
   border-radius: 50%;
   padding-top: 50px;
-  justify-content: center;
-  align-items: center;
   transition: 0.3s;
 }
 
 .to-card-page:hover {
-  width: 400px;
-  height: 400px;
+  width: 350px;
+  height: 350px;
 
 }
 
 .text-icon {
 
-  position: relative;
+  position: absolute;
   text-align: center;
+  bottom: 140px;
 }
 
 .material-symbols-outlined {
-
-  padding-top: 150px;
+  
   font-size: 28px;
   color: #fff;
 }
@@ -83,3 +78,7 @@ body {
 .text-icon .gsap {
   opacity: 0;
 }
+
+
+
+

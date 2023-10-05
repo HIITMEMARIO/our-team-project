@@ -12,6 +12,7 @@
 .members {
   display: flex;
   justify-content: space-around;
+  opacity: 1;
 }
 
 .member {
