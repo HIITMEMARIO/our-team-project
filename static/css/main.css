@@ -1,4 +1,5 @@
-<<<<<<< HEAD:css/main.css
+
+
 body {
   font-family: "Nanum Gothic", sans-serif;
 }
@@ -6,11 +7,6 @@ body {
 
 .container {
   position: absolute;
-=======
-.container {
-  position: absolute;
-  background-color: #fff;
->>>>>>> 483c76cfaadcfe65e44e0924860011cd569992c0:static/css/main.css
   width: 100%;
   height: 100%;
   display: flex;
@@ -38,14 +34,9 @@ body {
 }
 
 .circle:hover {
-<<<<<<< HEAD:css/main.css
   width: 450px;
   height: 450px;
   box-shadow: 0px 8px 10px 10px rgb(44, 43, 43)
-=======
-  width: 550px;
-  height: 550px;
->>>>>>> 483c76cfaadcfe65e44e0924860011cd569992c0:static/css/main.css
 }
 
 /* 클릭시 카드페이지 이동 */
@@ -63,7 +54,6 @@ body {
 }
 
 .to-card-page:hover {
-<<<<<<< HEAD:css/main.css
   width: 450px;
   height: 450px;
 
@@ -71,24 +61,13 @@ body {
 
 .text-icon {
 
-=======
-  width: 550px;
-  height: 550px;
-}
-
-.text-icon {
->>>>>>> 483c76cfaadcfe65e44e0924860011cd569992c0:static/css/main.css
   position: relative;
   text-align: center;
 }
 
 .material-symbols-outlined {
-<<<<<<< HEAD:css/main.css
 
   padding-top: 150px;
-=======
-  padding-top: 80px;
->>>>>>> 483c76cfaadcfe65e44e0924860011cd569992c0:static/css/main.css
   font-size: 28px;
   color: #fff;
 }
