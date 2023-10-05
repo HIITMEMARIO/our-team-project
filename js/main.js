@@ -1,7 +1,10 @@
-const mem1_btn = document.getElementById("mem1_btn");
+// index.html 이미지,텍스트 순차적으로 보이게 하는 애니메이션 효과
 
-function handleClickMem1() {
-  console.log("haha");
-}
+const fadeEls = document.querySelectorAll(".gsap");
 
-mem1_btn.addEventListener("click", handleClickMem1);
+fadeEls.forEach(function (fadeEl, index) {
+  gsap.to(fadeEl, 1, {
+    delay: (index + 1) * 0.5,
+    opacity: 1,
+  });
+});

@@ -12,11 +12,13 @@ function onGeoOk(position) {
       const city = document.querySelector("#weather span:last-child");
       const name = data.name;
       city.innerText = data.name;
-      weather.innerText = `${data.weather[0].main} / ${data.main.temp}`;
+      weather.innerText = `${data.weather[0].main} / ${Math.floor(
+        data.main.temp
+      )}°C`;
     });
 }
 function onGeoError() {
-  alert("Can't find you. No weather for u");
+  console.log("위치정보가 꺼져 있습니다");
 }
 
 navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
