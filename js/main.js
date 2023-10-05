@@ -5,7 +5,7 @@ const fadeEls = document.querySelectorAll('.gsap')
 
 fadeEls.forEach(function (fadeEl, index){
   gsap.to(fadeEl, 1, {  
-    delay:(index + 1) * .5, 
+    delay:(index + 1) * .7, 
     opacity: 1
   })
 });
