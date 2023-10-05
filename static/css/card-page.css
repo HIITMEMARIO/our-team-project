@@ -1,0 +1,19 @@
+#toPersonalIntro {
+  padding-top: 200px;
+  display: flex;
+}
+
+.team {
+  width: 1000px;
+  height: 600px;
+  background-color: ivory;
+  margin: 150px auto 100px auto;
+}
+.members {
+  display: flex;
+  justify-content: space-around;
+}
+
+.member {
+  background-color: ivory;
+}
