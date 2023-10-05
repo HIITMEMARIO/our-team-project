@@ -10,10 +10,22 @@
   margin: 150px auto 100px auto;
 }
 .members {
-  display: flex;
-  justify-content: space-around;
+  width: 1000px;
+  margin: 0px auto;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .member {
   background-color: ivory;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image {
+  width: 300px;
+  height: 300px;
 }
