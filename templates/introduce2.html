@@ -8,112 +8,117 @@
   </head>
   <body id="top">
     <div class="page-change">
-    <nav class="nav" id="top">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <span id="team-name">4JoChamChi</span>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="index.html">홈</a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="card-page.html">우리팀 특징 및 규칙</a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" id="open">팀원 소개</a>
-          <div id="list">
-            <ul class="memberlist">
-              <li><a href="introduce.html">김래준</a></li>
-              <li><a href="introduce2.html">김미희</a></li>
-              <li><a href="introduce3.html">민준혁</a></li>
-              <li><a href="introduce4.html">장가을</a></li>
-              <li><a href="introduce5.html">한혜원</a></li>
-            </ul>
+      <nav class="nav" id="top">
+        <ul class="nav__list">
+          <li class="nav__btn">
+            <span id="team-name">4JoChamChi</span>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="index.html">홈</a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="card-page.html">우리팀 특징 및 규칙</a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" id="open">팀원 소개</a>
+            <div id="list">
+              <ul class="memberlist">
+                <li><a href="introduce.html">김래준</a></li>
+                <li><a href="introduce2.html">김미희</a></li>
+                <li><a href="introduce3.html">민준혁</a></li>
+                <li><a href="introduce4.html">장가을</a></li>
+                <li><a href="introduce5.html">한혜원</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__weather">
+            <div id="weather">
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+          <!-- 다크모드 버튼 -->
+          <li>
+            <input type="checkbox" id="dark-mode-checkbox" />
+            <label for="dark-mode-checkbox" class="dark-mode-btn"></label>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <!-- top 버튼 -->
+        <a class="top_btn" href="#top">
+          <span class="material-symbols-outlined top_arrow">
+            keyboard_double_arrow_up
+          </span>
+        </a>
+        <div class="inner">
+          <!-- 카드 -->
+          <div class="card-group">
+            <div class="introduce__github">
+              <a href="https://github.com/laejun-kim">
+                <i class="fa-brands fa-github fa-xl"></i>
+              </a>
+            </div>
+            <div class="img">
+              <img src="../static/image/mihee2.jpg" alt="소개사진" />
+            </div>
+            <div class="introduce">
+              <h3>김미희</h3>
+              <p>안녕하세요 집순이 김미희라고 합니다.</p>
+              <br />
+              <p>게임을 좋아하고 강아지, 고양이도 좋아해요!</p>
+              <br />
+              <p>요즘은 푸바오에 빠져있답니다 😳</p>
+              <br />
+              <p>앞으로 잘 부탁드려요!</p>
+            </div>
           </div>
-        </li>
-        <li class="nav__weather">
-          <div id="weather">
-            <span></span>
-            <span></span>
-          </div>
-        </li>
-        <!-- 다크모드 버튼 -->
-        <li>
-          <input type="checkbox" id="dark-mode-checkbox" />
-          <label for="dark-mode-checkbox" class="dark-mode-btn"></label>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <!-- top 버튼 -->
-      <a class="top_btn" href="#top">
-        <span class="material-symbols-outlined top_arrow">
-          keyboard_double_arrow_up
-        </span>
-      </a>
-      <div class="inner">
-        <!-- 카드 -->
-        <div class="card-group">
-          <div class="introduce__github">
-            <a href="https://github.com/laejun-kim">
-              <i class="fa-brands fa-github fa-xl" ></i>
-            </a>
-          </div>
-          <div class="img">
-            <img src="../static/image/mihee2.jpg" alt="소개사진" />
-          </div>
-          <div class="introduce">
-            <h3>김미희</h3>
-            <p>안녕하세요 집순이 김미희라고 합니다.</p>
-            <br />
-            <p>게임을 좋아하고 강아지, 고양이도 좋아해요!</p>
-            <br />
-            <p>요즘은 푸바오에 빠져있답니다 😳</p>
-            <br />
-            <p>앞으로 잘 부탁드려요!</p>
+
+          <!-- 태그 -->
+          <div class="tag-group">
+            <div class="tag">
+              <button type="button" class="btn tag-title btn-mbti">
+                MBTI >
+              </button>
+              <button type="button" class="btn btn-mbti">#INFP</button>
+            </div>
+            <div class="tag">
+              <button type="button" class="btn tag-title btn-habit">
+                취미 >
+              </button>
+              <button type="button" class="btn btn-habit">#카페가기</button>
+              <button type="button" class="btn btn-habit">#게임</button>
+              <button type="button" class="btn btn-habit">#영화보기</button>
+              <button type="button" class="btn btn-habit">#손으로만들기</button>
+            </div>
+            <div class="tag">
+              <button type="button" class="btn tag-title btn-strength">
+                장점 >
+              </button>
+              <button type="button" class="btn btn-strength">#웃음많음</button>
+              <button type="button" class="btn btn-strength">#공감잘함</button>
+            </div>
+            <div class="tag">
+              <button type="button" class="btn tag-title btn-collaboration">
+                협업스타일 >
+              </button>
+              <button type="button" class="btn btn-collaboration">
+                #유연함
+              </button>
+              <button type="button" class="btn btn-collaboration">
+                #의사소통잘함
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- 태그 -->
-        <div class="tag-group">
-          <div class="tag">
-            <button type="button" class="btn tag-title btn-mbti">MBTI ></button>
-            <button type="button" class="btn btn-mbti">#INFP</button>
-          </div>
-          <div class="tag">
-            <button type="button" class="btn tag-title btn-habit">
-              취미 >
-            </button>
-            <button type="button" class="btn btn-habit">#카페가기</button>
-            <button type="button" class="btn btn-habit">#게임</button>
-            <button type="button" class="btn btn-habit">#영화보기</button>
-            <button type="button" class="btn btn-habit">#손으로만들기</button>
-          </div>
-          <div class="tag">
-            <button type="button" class="btn tag-title btn-strength">
-              장점 >
-            </button>
-            <button type="button" class="btn btn-strength">#웃음많음</button>
-            <button type="button" class="btn btn-strength">#공감잘함</button>
-          </div>
-          <div class="tag">
-            <button type="button" class="btn tag-title btn-collaboration">
-              협업스타일 >
-            </button>
-            <button type="button" class="btn btn-collaboration">#유연함</button>
-            <button type="button" class="btn btn-collaboration">
-              #의사소통잘함
-            </button>
-          </div>
+        <!-- 하단 버튼 -->
+        <div class="button">
+          <button type="button" class="btn btn-back">뒤로가기</button>
+          <button type="button" class="btn btn-home">홈으로</button>
         </div>
-      </div>
+      </main>
     </div>
-      <!-- 하단 버튼 -->
-      <div class="button">
-        <button type="button" class="btn btn-back">뒤로가기</button>
-        <button type="button" class="btn btn-home">홈으로</button>
-      </div>
-    </main>
 
     <script src="../js/weather.js"></script>
     <script src="../js/introduce.js"></script>
