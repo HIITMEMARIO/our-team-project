@@ -21,11 +21,10 @@ gsap.from(".text-icon", {
 // // 카드 순차적으로 돌면서 나타나게하는 효과
 const fadeMembersEls = document.querySelectorAll(".fade-in");
 fadeMembersEls.forEach(function (fadeEl, index) {
-  gsap.to(fadeEl, 1, {
-    delay: (index + 1) * .4,
-    opacity: 1,
-    x: 0,
-    y: -250,
+  gsap.from(fadeEl, 1, {
+    delay: (index + 1) * .5,
+    opacity: 0,
+    y: 320,
     duration: 2
   })
 });
