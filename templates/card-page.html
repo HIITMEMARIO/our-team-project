@@ -120,13 +120,21 @@
       <h2>응원메시지를 남겨주세요!</h2>
       <div class="comments__area">
         <form class="comments__form">
-          <input type="text" class="comments__username" placeholder="이름" />
           <input
             type="text"
+            id="username"
+            class="comments__username"
+            placeholder="이름"
+          />
+          <input
+            type="text"
+            id="textarea"
             class="comments__textarea"
             placeholder="저희를 응원해 주세요!"
           />
-          <button type="button" class="btn btn-mbti">응원하기</button>
+          <button type="button" id="submit_btn" class="btn btn-mbti">
+            응원하기
+          </button>
         </form>
       </div>
       <div class="comment">
@@ -142,5 +150,5 @@
   <script src="../js/introduce.js"></script>
   <script src="../js/nav-member-toggle.js"></script>
   <script src="../js/card-page.js"></script>
-  <script type="module" src="../js/comment.js"></script>
+  <script type="module"></script>
 </html>
