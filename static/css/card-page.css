@@ -9,16 +9,31 @@ h1 {
 }
 
 .nav {
+  position: relative;
   z-index: 9;
   border-bottom: 1px solid #353535;
   box-shadow: 0px 0px 9px 2px #353535;
 }
 
-#toPersonalIntro {
-  padding-top: 200px;
-  display: flex;
+.list1 {
+  border-radius: 0 0 13px 13px;
+  text-align: center;
+  height: 250px;
+  width: 150px;
+  position: absolute;
+  top: 100%;
+  display: none;
 }
 
+.list1.show {
+  display: block;
+  background-color: black;
+}
+
+.memberlist > li {
+  padding-top: 10px; 
+  margin-bottom: 10px;
+}
 .team {
   position: relative;
   width: 1000px;
@@ -59,9 +74,6 @@ h1 {
   border: 1px solid #333;
 }
 
-.image {
-  border-radius: 10px 10px 0 0 ;
-}
 
 .fade-in{
   opacity: 1;

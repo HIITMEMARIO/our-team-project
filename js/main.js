@@ -33,7 +33,7 @@ fadeMembersEls.forEach(function (fadeEl, index) {
 const fadeTeamEls = document.querySelectorAll(".team");
 fadeTeamEls.forEach(function (fadeEl, index) {
   gsap.to(fadeEl, 1, {
-    delay: (index + 1) * 3.5,
+    delay: (index + 1) * 1,
     opacity: 1,
   })
 });
