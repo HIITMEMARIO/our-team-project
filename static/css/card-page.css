@@ -1,20 +1,54 @@
+body{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.nav {
+  z-index: 9;
+  border-bottom: 1px solid #353535;
+  box-shadow:0px 0px 9px 2px #353535;
+}
+
 #toPersonalIntro {
   padding-top: 200px;
   display: flex;
 }
 
 .team {
+  position: relative;
   width: 1000px;
   height: 600px;
   background-color: ivory;
-  margin: 150px auto 100px auto;
+  margin: 150px auto 150px auto;
+  border-radius: 130px;
+  opacity: 0;
+  top: -40px;
+  border-bottom: 1px solid ivory;
+  box-shadow:0px 0px 9px 2px #353535;
 }
+
 .members {
   display: flex;
   justify-content: space-around;
-  opacity: 1;
+  border-radius: 10px;
+  padding-top: 100px ;
 }
 
 .member {
   background-color: ivory;
+  border-radius: 10px;
+}
+
+.image {
+  border-radius: 10px 10px 0 0 ;
+}
+
+.fade-in,
+.team{
+  opacity: 0;
 }
