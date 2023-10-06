@@ -8,111 +8,129 @@
   </head>
   <body id="top">
     <div class="page-change">
-    <nav class="nav" id="top">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <span id="team-name">4JoChamChi</span>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="홈페이지html">홈</a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="특징 및 규칙.html">우리팀 특징 및 규칙</a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" id="open">팀원 소개</a>
-          <div id="list">
-            <ul class="memberlist">
-              <li><a href="introduce.html">김래준</a></li>
-              <li><a href="introduce2.html">김미희</a></li>
-              <li><a href="introduce3.html">민준혁</a></li>
-              <li><a href="introduce4.html">장가을</a></li>
-              <li><a href="introduce5.html">한혜원</a></li>
-            </ul>
+      <nav class="nav" id="top">
+        <ul class="nav__list">
+          <li class="nav__btn">
+            <span id="team-name">4JoChamChi</span>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="홈페이지html">홈</a>
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" href="특징 및 규칙.html"
+              >우리팀 특징 및 규칙</a
+            >
+          </li>
+          <li class="nav__btn">
+            <a class="nav__link" id="open">팀원 소개</a>
+            <div id="list">
+              <ul class="memberlist">
+                <li><a href="introduce.html">김래준</a></li>
+                <li><a href="introduce2.html">김미희</a></li>
+                <li><a href="introduce3.html">민준혁</a></li>
+                <li><a href="introduce4.html">장가을</a></li>
+                <li><a href="introduce5.html">한혜원</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav__weather">
+            <div id="weather">
+              <span></span>
+              <span></span>
+            </div>
+          </li>
+          <!-- 다크모드 버튼 -->
+          <li>
+            <input type="checkbox" id="dark-mode-checkbox" />
+            <label for="dark-mode-checkbox" class="dark-mode-btn"></label>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <!-- top 버튼 -->
+        <a class="top_btn" href="#top">
+          <span class="material-symbols-outlined top_arrow">
+            keyboard_double_arrow_up
+          </span>
+        </a>
+        <div class="inner">
+          <!-- 카드 -->
+          <div class="card-group">
+            <div class="introduce__github">
+              <a href="https://github.com/laejun-kim">
+                <i class="fa-brands fa-github fa-xl"></i>
+              </a>
+            </div>
+            <div class="img">
+              <img src="../static/image/laejun2.jpg" alt="소개사진" />
+            </div>
+            <div class="introduce">
+              <h3>김래준</h3>
+              <p>문과 노베이스로 코딩을 갓 배우기 시작한 김래준입니다.</p>
+              <br />
+              <p>절대로 중간에 포기하지 않고 끝까지 완주하겠습니다!!</p>
+              <br />
+              <p>사실 벌써 JS 함수 잘 모르겠어요...</p>
+              <br />
+              <p>근데 보다보면 눈에 익겠죠 ㅎ</p>
+            </div>
           </div>
-        </li>
-        <li class="nav__weather">
-          <div id="weather">
-            <span></span>
-            <span></span>
-          </div>
-        </li>
-        <!-- 다크모드 버튼 -->
-        <li>
-          <input type="checkbox" id="dark-mode-checkbox" />
-          <label for="dark-mode-checkbox" class="dark-mode-btn"></label>
-        </li>
-      </ul>
-    </nav>
-    <main>
-      <!-- top 버튼 -->
-      <a class="top_btn" href="#top">
-        <span class="material-symbols-outlined top_arrow">
-          keyboard_double_arrow_up
-        </span>
-      </a>
-      <div class="inner">
-        <!-- 카드 -->
-        <div class="card-group">
-          <div class="img">
-            <img src="../static/image/laejun2.jpg" alt="소개사진" />
-          </div>
-          <div class="introduce">
-            <h3>김래준</h3>
-            <p>문과 노베이스로 코딩을 갓 배우기 시작한 김래준입니다.</p>
-            <br />
-            <p>절대로 중간에 포기하지 않고 끝까지 완주하겠습니다!!</p>
-            <br />
-            <p>사실 벌써 JS 함수 잘 모르겠어요...</p>
-            <br />
-            <p>근데 보다보면 눈에 익겠죠 ㅎ</p>
+
+          <!-- 태그 -->
+          <div class="tag-group">
+            <div class="tag">
+              <button type="button" class="btn tag-title btn-mbti">
+                MBTI >
+              </button>
+              <button type="button" class="btn btn-mbti">#ENTP</button>
+            </div>
+            <div class="tag">
+              <button type="button" class="btn tag-title btn-habit">
+                취미 >
+              </button>
+              <button type="button" class="btn btn-habit">#낮잠</button>
+              <button type="button" class="btn btn-habit">#자전거</button>
+              <button type="button" class="btn btn-habit">#게임</button>
+              <button type="button" class="btn btn-habit">
+                #고양이랑 놀기
+              </button>
+            </div>
+            <div class="tag">
+              <button type="button" class="btn tag-title btn-strength">
+                장점 >
+              </button>
+              <button type="button" class="btn btn-strength">
+                #호기심많음
+              </button>
+              <button type="button" class="btn btn-strength">#밝음!</button>
+            </div>
+            <div class="tag">
+              <button type="button" class="btn tag-title btn-collaboration">
+                협업스타일 >
+              </button>
+              <button type="button" class="btn btn-collaboration">
+                #많이 물어보는편
+              </button>
+              <button type="button" class="btn btn-collaboration">
+                #의사소통잘함
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- 태그 -->
-        <div class="tag-group">
-          <div class="tag">
-            <button type="button" class="btn tag-title btn-mbti">MBTI ></button>
-            <button type="button" class="btn btn-mbti">#ENTP</button>
-          </div>
-          <div class="tag">
-            <button type="button" class="btn tag-title btn-habit">
-              취미 >
-            </button>
-            <button type="button" class="btn btn-habit">#낮잠</button>
-            <button type="button" class="btn btn-habit">#자전거</button>
-            <button type="button" class="btn btn-habit">#게임</button>
-            <button type="button" class="btn btn-habit">#고양이랑 놀기</button>
-          </div>
-          <div class="tag">
-            <button type="button" class="btn tag-title btn-strength">
-              장점 >
-            </button>
-            <button type="button" class="btn btn-strength">#호기심많음</button>
-            <button type="button" class="btn btn-strength">#밝음!</button>
-          </div>
-          <div class="tag">
-            <button type="button" class="btn tag-title btn-collaboration">
-              협업스타일 >
-            </button>
-            <button type="button" class="btn btn-collaboration">
-              #많이 물어보는편
-            </button>
-            <button type="button" class="btn btn-collaboration">
-              #의사소통잘함
-            </button>
-          </div>
+        <!-- 하단 버튼 -->
+        <div class="button">
+          <button type="button" class="btn btn-back">뒤로가기</button>
+          <button type="button" class="btn btn-home">홈으로</button>
         </div>
-      </div>
-      </div>
-
-      <!-- 하단 버튼 -->
-      <div class="button">
-        <button type="button" class="btn btn-back">뒤로가기</button>
-        <button type="button" class="btn btn-home">홈으로</button>
-      </div>
-    </main>
+      </main>
+    </div>
     <script src="../js/weather.js"></script>
     <script src="../js/introduce.js"></script>
+    <script src="../js/nav-member-toggle.js"></script>
+    <script
+      src="https://kit.fontawesome.com/971fe645b6.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
