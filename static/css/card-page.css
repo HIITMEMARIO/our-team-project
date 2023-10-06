@@ -63,10 +63,11 @@ h1 {
   border-radius: 10px 10px 0 0 ;
 }
 
-.fade-in,
-.team {
+.fade-in{
   opacity: 1;
 }
+
+
 
 .page-change {
   animation: change 1s ease;
