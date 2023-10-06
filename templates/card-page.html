@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../static/css/style.css" />
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
-    integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <script defer src="../js/main.js"></script>
-  <title>사조참치</title>
-</head>
-
-<body>
-  <div class="page-change">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+      integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script defer src="../js/main.js"></script>
+    <title>사조참치</title>
+  </head>
+  <body>
+    <div class="page-change">
     <nav class="nav" id="top">
       <ul class="nav__list">
         <li class="nav__btn">
@@ -30,11 +31,11 @@
           <a class="nav__link" id="open">팀원 소개</a>
           <div id="list">
             <ul class="memberlist">
-              <li><a href="개인페이지.html">멤버1</a></li>
-              <li><a href="개인페이지.html">멤버2</a></li>
-              <li><a href="개인페이지.html">멤버3</a></li>
-              <li><a href="개인페이지.html">멤버4</a></li>
-              <li><a href="개인페이지.html">멤버5</a></li>
+              <li><a href="introduce.html">김래준</a></li>
+              <li><a href="introduce2.html">김미희</a></li>
+              <li><a href="introduce3.html">민준혁</a></li>
+              <li><a href="introduce4.html">장가을</a></li>
+              <li><a href="introduce5.html">한혜원</a></li>
             </ul>
           </div>
         </li>
@@ -53,58 +54,99 @@
     </nav>
     <div class="team">
       <div>
-        <h2>우리팀의 특징 및 규칙</h2>
-        <h2>궁극적 목적</h2>
+        <h2>저희는 사조참치 입니다!</h2>
+        <h2>(궁극적 목적 등 조 설명 작성)</h2>
       </div>
     </div>
     <div class="members">
-      <div class="member fade-in">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwgslP3IvAktgE1lSpdpN7WrKXzm4XSLcVuGtACLCLA&s"
-          class="image" />
+      <div class="member fade-in ">
+        <img src="../static/image/laejun.jpg" class="image" />
         <div class="content">
-          <h1>홍길동</h1>
-          <button action="/card_page/mem1" id="mem1_btn">자세히 보기</button>
+          <h1 class="member_name">김래준</h1>
+          <button type="button" id="member1_btn" class="btn btn-back">
+            자세히 보기
+          </button>
         </div>
       </div>
       <div class="member fade-in">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwgslP3IvAktgE1lSpdpN7WrKXzm4XSLcVuGtACLCLA&s"
-          class="image" />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwgslP3IvAktgE1lSpdpN7WrKXzm4XSLcVuGtACLCLA&s"
+          class="image"
+        />
         <div class="content">
-          <h1>홍길동</h1>
-          <button>자세히 보기</button>
+          <h1 class="member_name">김미희</h1>
+          <button type="button" id="member2_btn" class="btn btn-back">
+            자세히 보기
+          </button>
         </div>
       </div>
       <div class="member fade-in">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwgslP3IvAktgE1lSpdpN7WrKXzm4XSLcVuGtACLCLA&s"
-          class="image" />
+        <img
+          src="../static/image/junhyeok.jpg"
+          class="image"
+        />
         <div class="content">
-          <h1>홍길동</h1>
-          <form action="/card_page/mem1"><button>자세히 보기</button></form>
+          <h1 class="member_name">민준혁</h1>
+          <button type="button" id="member3_btn" class="btn btn-back">
+            자세히 보기
+          </button>
         </div>
       </div>
       <div class="member fade-in">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwgslP3IvAktgE1lSpdpN7WrKXzm4XSLcVuGtACLCLA&s"
-          class="image" />
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwgslP3IvAktgE1lSpdpN7WrKXzm4XSLcVuGtACLCLA&s"
+          class="image"
+        />
         <div class="content">
-          <h1>홍길동</h1>
-          <button>자세히 보기</button>
+          <h1 class="member_name">장가을</h1>
+          <button type="button" id="member4_btn" class="btn btn-back">
+            자세히 보기
+          </button>
         </div>
       </div>
       <div class="member fade-in">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdwgslP3IvAktgE1lSpdpN7WrKXzm4XSLcVuGtACLCLA&s"
-          class="image" />
+        <img src="../static/image/hyewon.jpeg" class="image" />
         <div class="content">
-          <h1>홍길동</h1>
-          <button>자세히 보기</button>
+          <h1 class="member_name">한혜원</h1>
+          <button type="button" id="member5_btn" class="btn btn-back">
+            자세히 보기
+          </button>
         </div>
       </div>
     </div>
-  </div>
-  <!-- <div class="comments">방명록</div> -->
-</body>
-<script src="../js/main.js"></script>
-<script src="../js/weather.js"></script>
-<script src="../js/introduce.js"></script>
-<script src="../js/nav-member-toggle.js"></script>
-
+    <div class="comments">
+      <h2>응원메시지를 남겨주세요!</h2>
+      <div class="comments__area">
+        <form class="comments__form">
+          <input
+            type="text"
+            id="username"
+            class="comments__username"
+            placeholder="이름"
+          />
+          <input
+            type="text"
+            id="textarea"
+            class="comments__textarea"
+            placeholder="저희를 응원해 주세요!"
+          />
+          <button type="button" id="submit_btn" class="btn btn-mbti">
+            응원하기
+          </button>
+        </form>
+      </div>
+      <div class="comment">
+        <span>comment</span>
+        <span id="comment__delete">❌</span>
+      </div>
+    </div>
+    </div>
+    <a id="toPersonalIntro" href="introduce.html">개인 소개 페이지</a>
+  </body>
+  <script src="../js/main.js"></script>
+  <script src="../js/weather.js"></script>
+  <script src="../js/introduce.js"></script>
+  <script src="../js/nav-member-toggle.js"></script>
+  <script src="../js/card-page.js"></script>
+  <script type="module"></script>
 </html>

@@ -20,6 +20,7 @@ body {
 /* 중앙 참치 이미지 */
 
 .circle {
+  opacity: 0;
   transition: .3s;
   border: 1px solid #0871c7;
   border-radius: 50%;

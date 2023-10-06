@@ -22,7 +22,7 @@ gsap.from(".text-icon", {
 const fadeMembersEls = document.querySelectorAll(".fade-in");
 fadeMembersEls.forEach(function (fadeEl, index) {
   gsap.to(fadeEl, 1, {
-    delay: (index + 1) * .5,
+    delay: (index + 1) * .4,
     opacity: 1,
     x: 0,
     y: -250,
