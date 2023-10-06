@@ -12,4 +12,3 @@ function handleListClick() {
 }
 
 listbtn.addEventListener("click", handleListClick);
-// document.getElementById("list").style.display = "block";
