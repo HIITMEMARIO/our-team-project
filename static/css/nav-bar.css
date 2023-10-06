@@ -61,3 +61,25 @@ a:visited {
 #weather span {
   font-size: 18px;
 }
+
+/* 화면 너비가 530px 까지 줄어드는 범위까지는 커버가능 */
+@media (max-width: 1000px) {
+  .nav__weather {
+    display: none;
+  }
+  #team-name {
+    display: none;
+  }
+  .nav {
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    height: 70px;
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 20px 0px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+  }
+}
