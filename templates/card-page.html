@@ -7,7 +7,7 @@
     <title>사조참치</title>
   </head>
   <body>
-    <nav class="nav">
+    <nav class="nav" id="top">
       <ul class="nav__list">
         <li class="nav__btn">
           <span id="team-name">4JoChamChi</span>
@@ -16,23 +16,30 @@
           <a class="nav__link" href="index.html">홈</a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="특징 및 규칙.html"> 우리팀 특징 및 규칙</a>
+          <a class="nav__link" href="card-page.html">우리팀 특징 및 규칙</a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="개인페이지.html">팀원 소개</a>
+          <a class="nav__link" id="open">팀원 소개</a>
+          <div id="list">
+            <ul class="memberlist">
+              <li><a href="개인페이지.html">멤버1</a></li>
+              <li><a href="개인페이지.html">멤버2</a></li>
+              <li><a href="개인페이지.html">멤버3</a></li>
+              <li><a href="개인페이지.html">멤버4</a></li>
+              <li><a href="개인페이지.html">멤버5</a></li>
+            </ul>
+          </div>
         </li>
-        <!-- <li class="nav__weather">
+        <li class="nav__weather">
           <div id="weather">
             <span></span>
             <span></span>
-        </li> -->
-        <li class="nav__btn">
-          <input
-            id="night_day"
-            type="button"
-            value="night"
-            onclick="nightDayHandler(this);"
-          />
+          </div>
+        </li>
+        <!-- 다크모드 버튼 -->
+        <li>
+          <input type="checkbox" id="dark_mode_checkbox" />
+          <label for="dark_mode_checkbox" class="dark_mode_btn">🌝</label>
         </li>
       </ul>
     </nav>
@@ -84,4 +91,7 @@
     <a id="toPersonalIntro" href="introduce.html">개인 소개 페이지</a>
   </body>
   <script src="../js/main.js"></script>
+  <script src="../js/weather.js"></script>
+  <script src="../js/introduce.js"></script>
+  <script src="../js/nav-member-toggle.js"></script>
 </html>
