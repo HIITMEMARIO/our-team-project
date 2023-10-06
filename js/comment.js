@@ -56,7 +56,6 @@ function addComment(docs) {
     const div = document.createElement("div");
 
     // * container element에 class name 추가하기
-    // div.classList.add("comments");
 
     div.innerHTML = `<div class="comment">
     <h2 class="comment__username">${userName}</h2>
