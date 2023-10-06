@@ -16,10 +16,11 @@ body {
   background-size: cover;
 }
 
+
 /* 중앙 참치 이미지 */
 
 .circle {
-  
+  transition: .3s;
   border: 1px solid #0871c7;
   border-radius: 50%;
   width: 300px;
@@ -27,13 +28,15 @@ body {
   background-image: url("https://i.namu.wiki/i/OtQ7RAxKcYGW2wcPxCGaPI7C9MBgmZhr1FeChqVs7mesqE_uVp8rzdkWGt-y5x_lN5Tk2GzRnZXAQ0E1U_7JaQ.webp");
   background-position: center;
   background-size: cover;
-  transition: 0.3s;
+
 }
 
 .circle:hover {
   width: 350px;
   height: 350px;
-  box-shadow: 0px 8px 10px 10px rgb(44, 43, 43)
+  box-shadow: 0px 8px 10px 10px rgb(44, 43, 43);
+  
+  
 }
 
 /* 클릭시 카드페이지 이동 */
@@ -43,14 +46,14 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  padding-top: 50px;
-  transition: 0.3s;
+  transition: .3s;
 
 }
 
 .to-card-page:hover {
   width: 350px;
   height: 350px;
+
 
 }
 
@@ -75,11 +78,18 @@ body {
 }
 
 
-.container .gsap,
-.text-icon .gsap {
-  opacity: 0;
+
+
+.page-change {
+  animation: page-change 2s ease;
 }
 
-
-
+@keyframes page-change {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 

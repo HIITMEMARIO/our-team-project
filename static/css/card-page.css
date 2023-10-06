@@ -52,3 +52,19 @@ h1 {
 .team{
   opacity: 0;
 }
+
+.page-change {
+  animation: change 1s ease;
+}
+
+@keyframes change {
+  from {
+
+    opacity: 0;
+  }
+
+  to {
+
+    opacity: 1;
+  }
+}
