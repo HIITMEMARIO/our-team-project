@@ -37,13 +37,6 @@
   cursor: pointer;
 }
 
-#list {
-  padding: 10%;
-  width: 100%;
-  height: fit-content;
-  background-color: black;
-  border-radius: 0 0 10px 10px;
-}
 
 #list li {
   color: white;
