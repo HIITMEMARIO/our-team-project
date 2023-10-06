@@ -1,7 +1,7 @@
 // Firebase SDK 라이브러리 가져오기
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
 import {
+  getFirestore,
   collection,
   addDoc,
   getDocs,
@@ -11,7 +11,7 @@ import {
   doc,
   orderBy,
   query,
-} from "https://www.gstatic.com/firebasejs/9.14.0/firebase-firestore.js";
+} from "https://www.gstatic.com/firebasejs/10.4.0/firebase-firestore.js";
 
 // Firebase 구성 정보 설정
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
