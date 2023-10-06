@@ -1,5 +1,6 @@
 const listbtn = document.getElementById("open");
-const list = document.querySelector(".list");
+const list = document.querySelector(".list1");
+
 
 
 listbtn.addEventListener('click',function(event){
