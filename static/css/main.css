@@ -1,7 +1,6 @@
-
-
 body {
   font-family: "Nanum Gothic", sans-serif;
+
 }
 
 
@@ -17,25 +16,28 @@ body {
   background-size: cover;
 }
 
+
 /* 중앙 참치 이미지 */
 
-.circle_img {
+.circle {
+  opacity: 0;
+  transition: .3s;
   border: 1px solid #0871c7;
-  align-items: center;
-  justify-content: center;
   border-radius: 50%;
   width: 300px;
   height: 300px;
   background-image: url("https://i.namu.wiki/i/OtQ7RAxKcYGW2wcPxCGaPI7C9MBgmZhr1FeChqVs7mesqE_uVp8rzdkWGt-y5x_lN5Tk2GzRnZXAQ0E1U_7JaQ.webp");
   background-position: center;
   background-size: cover;
-  transition: 0.3s;
+
 }
 
-.circle_img:hover {
+.circle:hover {
   width: 350px;
   height: 350px;
-  box-shadow: 0px 8px 10px 10px rgb(44, 43, 43)
+  box-shadow: 0px 8px 10px 10px rgb(44, 43, 43);
+  
+  
 }
 
 /* 클릭시 카드페이지 이동 */
@@ -45,9 +47,7 @@ body {
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
-  transition: 0.3s;
+  transition: .3s;
 
 }
 
@@ -55,16 +55,19 @@ body {
   width: 350px;
   height: 350px;
 
+
 }
 
 .text-icon {
+
   position: absolute;
   text-align: center;
-  bottom: 120px;
+  bottom: 140px;
 }
 
 .material-symbols-outlined {
-  font-size: 25px;
+  
+  font-size: 28px;
   color: #fff;
 }
 
@@ -76,7 +79,18 @@ body {
 }
 
 
-.container .gsap,
-.text-icon .gsap {
-  opacity: 0;
+
+
+.page-change {
+  animation: page-change 2s ease;
 }
+
+@keyframes page-change {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
