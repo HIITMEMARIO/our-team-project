@@ -10,7 +10,7 @@ fadeEls.forEach(function (fadeEl, index){
 });
 
 // // 카드 순차적으로 돌면서 나타나게하는 효과
-const fadeMembersEls = document.querySelectorAll(".fade-in");
+const fadeMembersEls = document.querySelectorAll("git .fade-in");
 fadeMembersEls.forEach(function (fadeEl, index){
   gsap.to(fadeEl, 1, {  
     delay:(index + 1) * .5, 
