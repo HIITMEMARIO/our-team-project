@@ -4,6 +4,9 @@
 
 .comments {
   margin: 100px auto 0px auto;
+  padding: 30px;
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
   width: 600px;
   display: flex;
   flex-direction: column;
@@ -13,9 +16,18 @@
 }
 
 .comment {
-  background-color: yellow;
+  width: 300px;
 }
 
 .comments__area {
   margin: 30px 0px;
+}
+
+.comment__contents {
+  background-color: yellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 20px;
 }
