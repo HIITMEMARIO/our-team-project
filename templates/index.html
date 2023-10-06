@@ -3,22 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    
     <link rel="stylesheet" href="../static/css/style.css" />
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="../js/main.js"></script>
     <title>사조참치</title>
   </head>
   <body>
     <div class="container">
-      <div class="circle">
-        <a class="to-card-page" href="./card-page.html"></a>
+
+      <div class="circle_img gsap">
+        <a class="to-card-page gsap" href="./card-page.html"></a>
+      </div>
+
+      <div class="text-icon">
+        <span class="material-symbols-outlined gsap">
+          left_click
+          <p class="font-position gsap">Click the Tuna</p>
+        </span>
       </div>
     </div>
 
-    <div class="text-icon">
-      <span class="material-symbols-outlined">
-        left_click
-        <p class="font-size">Click the Tuna</p>
-      </span>
-    </div>
+
   </body>
-  <script src="../js/main.js"></script>
+
 </html>
