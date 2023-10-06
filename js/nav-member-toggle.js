@@ -1,14 +1,17 @@
 const listbtn = document.getElementById("open");
-const list = document.getElementById("list");
-list.style.display = "none";
+const list = document.querySelector(".list");
 
-function handleListClick() {
-  const listState = list.style.display;
-  if (listState === "none") {
-    list.style.display = "";
+
+listbtn.addEventListener('click',function(event){
+  event.stopPropagation()
+  if (list.classList.contains('show')){
+    list.classList.remove('show')
   } else {
-    list.style.display = "none";
+    list.classList.add('show')
   }
-}
+})
 
-listbtn.addEventListener("click", handleListClick);
+
+window.addEventListener('click', function(){
+  list.classList.remove('show')
+})
