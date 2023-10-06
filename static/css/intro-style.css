@@ -3,7 +3,7 @@
   --background: #000;
   --card-bg: #fff;
   --font-color: #fff;
-  --dark-btn-color: #757575;
+  --dark-btn-color: #ffffff;
   --btn-color: #fff;
   --tag-border: #fff;
 }
@@ -12,7 +12,7 @@
   --black: #fff;
   --card-bg: #d4d4d4;
   --white: #000;
-  --dark-btn-color: #fff;
+  --dark-btn-color: #408dff;
   --btn-color: #fff;
 }
 
@@ -66,11 +66,11 @@ main {
 
 /* darkMode 버튼 */
 
-#dark_mode_checkbox {
+#dark-mode-checkbox {
   display: none;
 }
 
-.dark_mode_btn {
+.dark-mode-btn {
   background-color: var(--dark-btn-color);
   padding: 10px 15px;
   border-radius: 30px;
@@ -78,8 +78,8 @@ main {
   transition: all 0.2s ease-in-out;
 }
 
-.dark_mode_btn:hover {
-  filter: brightness(1.1);
+.dark-mode-btn:hover {
+  filter: brightness(1.2);
 }
 
 .inner {
@@ -141,6 +141,10 @@ main {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
+}
+
+.btn.tag-title {
+  filter: invert(1);
 }
 
 .btn:hover {

@@ -13,13 +13,22 @@
           <span id="team-name">4JoChamChi</span>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="홈페이지html">홈</a>
+          <a class="nav__link" href="index.html">홈</a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="특징 및 규칙.html">우리팀 특징 및 규칙</a>
+          <a class="nav__link" href="card-page.html">우리팀 특징 및 규칙</a>
         </li>
         <li class="nav__btn">
-          <a class="nav__link" href="개인페이지.html">팀원 소개</a>
+          <a class="nav__link" id="open">팀원 소개</a>
+          <div id="list">
+            <ul class="memberlist">
+              <li><a href="개인페이지.html">멤버1</a></li>
+              <li><a href="개인페이지.html">멤버2</a></li>
+              <li><a href="개인페이지.html">멤버3</a></li>
+              <li><a href="개인페이지.html">멤버4</a></li>
+              <li><a href="개인페이지.html">멤버5</a></li>
+            </ul>
+          </div>
         </li>
         <li class="nav__weather">
           <div id="weather">
@@ -29,8 +38,8 @@
         </li>
         <!-- 다크모드 버튼 -->
         <li>
-          <input type="checkbox" id="dark_mode_checkbox" />
-          <label for="dark_mode_checkbox" class="dark_mode_btn">🌝</label>
+          <input type="checkbox" id="dark-mode-checkbox" />
+          <label for="dark-mode-checkbox" class="dark-mode-btn"></label>
         </li>
       </ul>
     </nav>
@@ -63,19 +72,29 @@
         <!-- 태그 -->
         <div class="tag-group">
           <div class="tag">
+            <button type="button" class="btn tag-title btn-mbti">MBTI ></button>
             <button type="button" class="btn btn-mbti">#INFP</button>
           </div>
           <div class="tag">
+            <button type="button" class="btn tag-title btn-habit">
+              취미 >
+            </button>
             <button type="button" class="btn btn-habit">#넷플릭스</button>
             <button type="button" class="btn btn-habit">#운동</button>
             <button type="button" class="btn btn-habit">#영화보기</button>
             <button type="button" class="btn btn-habit">#독서</button>
           </div>
           <div class="tag">
+            <button type="button" class="btn tag-title btn-strength">
+              장점 >
+            </button>
             <button type="button" class="btn btn-strength">#꾸준함</button>
             <button type="button" class="btn btn-strength">#착함</button>
           </div>
           <div class="tag">
+            <button type="button" class="btn tag-title btn-collaboration">
+              협업스타일 >
+            </button>
             <button type="button" class="btn btn-collaboration">#착함</button>
             <button type="button" class="btn btn-collaboration">
               #의사소통잘함
@@ -90,7 +109,9 @@
         <button type="button" class="btn btn-home">홈으로</button>
       </div>
     </main>
+
     <script src="../js/weather.js"></script>
     <script src="../js/introduce.js"></script>
+    <script src="../js/nav-member-toggle.js"></script>
   </body>
 </html>
