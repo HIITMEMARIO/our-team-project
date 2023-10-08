@@ -6,17 +6,18 @@
   margin: 100px auto 0px auto;
   padding: 30px;
   border-radius: 30px;
-  border: 1px solid rgba(0, 0, 0, 0.3);
-  width: 600px;
+  width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: ivory;
+  box-shadow: var(--box-shadow);
 }
 
 .comment {
-  width: 300px;
+  width: 500px;
+  margin-bottom: 30px;
 }
 
 .comments__area {
@@ -30,4 +31,30 @@
   padding: 10px;
   margin: 10px 0px;
   border-radius: 20px;
+}
+
+.comments input {
+  padding: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.comments input:focus {
+  border: none;
+  outline: 3px ridge blue;
+  border-radius: 10px;
+}
+
+.comments input:first-child {
+  width: 80px;
+  margin-right: 10px;
+}
+
+.comments input:nth-child(2) {
+  width: 300px;
+  margin-right: 10px;
+}
+
+.comment__timestamp {
+  font-size: 15px;
 }

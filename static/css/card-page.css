@@ -1,3 +1,7 @@
+:root {
+  --box-shadow: 0px 8px 16px 0px #00000033;
+}
+
 body {
   font-size: 25px;
   font-weight: 600;
@@ -31,7 +35,7 @@ h1 {
 }
 
 .memberlist > li {
-  padding-top: 10px; 
+  padding-top: 10px;
   margin-bottom: 10px;
 }
 .team {
@@ -44,10 +48,12 @@ h1 {
   opacity: 0;
 
   border-bottom: 1px solid ivory;
-  box-shadow: 0px 0px 9px 2px #353535;
+  box-shadow: var(--box-shadow);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-image: url("https://images.pexels.com/photos/1615681/pexels-photo-1615681.jpeg?auto=compress&cs=tinysrgb&w=1600");
 }
 
 .members {
@@ -56,7 +62,6 @@ h1 {
   justify-content: space-around;
   border-radius: 10px;
   top: -30px;
-  
 }
 
 .image {
@@ -71,15 +76,12 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #333;
+  box-shadow: var(--box-shadow);
 }
 
-
-.fade-in{
+.fade-in {
   opacity: 1;
 }
-
-
 
 .page-change {
   animation: change 1s ease;
@@ -87,12 +89,10 @@ h1 {
 
 @keyframes change {
   from {
-
     opacity: 0;
   }
 
   to {
-
     opacity: 1;
   }
 }

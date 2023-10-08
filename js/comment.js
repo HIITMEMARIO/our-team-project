@@ -28,30 +28,36 @@ const firebaseConfig = {
 // Firebase 인스턴스 초기화
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const ref = collection(db, "comments");
 const submitBtn = document.querySelector("#submit_btn");
 const commentsBox = document.querySelector(".comments");
 
 async function comment() {
   const username = $("#username").val();
   const textarea = $("#textarea").val();
+  const getDate = Timestamp.fromDate(new Date());
 
-  let doc = { username: username, textarea: textarea };
-  const commentref = collection(db, "comments");
-  await addDoc(commentref, doc);
+  let doc = {
+    username: username,
+    textarea: textarea,
+    date: getDate.toDate(), //수정
+  };
+  console.log(doc);
+  await addDoc(ref, doc);
   alert("저장 완료!");
 
   window.location.reload();
 }
 
-let docs = await getDocs(collection(db, "comments"));
+const docs = await getDocs(query(ref, orderBy("date", "desc")));
 addComment(docs);
 
 function addComment(docs) {
   docs.forEach((doc) => {
     let data = doc.data();
-    console.log(data);
     let comment = data.textarea;
     let userName = data.username;
+    let createdDate = data.date;
     // * 새로운 container element 추가하기
     const div = document.createElement("div");
 
@@ -63,6 +69,7 @@ function addComment(docs) {
       <span class="comment__text">${comment}</span>
       <span id="comment__delete">❌</span>
     </div>
+    <p class="comment__timestamp">${createdDate}</p>
   </div>`;
 
     commentsBox.append(div);
@@ -70,21 +77,3 @@ function addComment(docs) {
 }
 
 submitBtn.addEventListener("click", comment);
-
-// let docs = await getDocs(collection(db, "comments"));
-// docs.forEach((doc) => {
-//   let row = doc.data();
-//   const username = row["username"];
-//   const textarea = row["textarea"];
-// });
-
-// $("#submit_btn").click(async function () {
-//   console.log("hello");
-//   const username = $("#username").val();
-//   const textarea = $("#textarea").val();
-
-//   let doc = { username: username, textarea: textarea };
-//   await addDoc(collection(db, "comments"), doc);
-//   alert("저장 완료!");
-//   window.location.reload();
-// });
