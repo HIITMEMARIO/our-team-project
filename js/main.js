@@ -12,8 +12,8 @@ fadeEls.forEach(function (fadeEl, index) {
 
 
 gsap.from(".text-icon", {
-  opacity: 0, 
-  y: 200, 
+  opacity: 0,
+  y: 200,
   duration: 2
 });
 
@@ -41,4 +41,18 @@ fadeTeamEls.forEach(function (fadeEl, index) {
 
 
 
+const buttonHoverEl = document.querySelector('.circle')
+const containerEl = document.querySelector('.container')
+const IconEl = document.querySelector('.material-symbols-outlined')
+const textEl = document.querySelector('.font-position')
 
+
+buttonHoverEl.addEventListener('click', function () {
+  containerEl.classList.add('background')
+
+  setTimeout(function(){
+
+    location.href = 'card-page.html';
+    
+    }, 400);
+})

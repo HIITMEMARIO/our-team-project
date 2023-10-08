@@ -1,6 +1,6 @@
 body {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 600; 
 }
 
 h1 {
@@ -15,13 +15,14 @@ h1 {
   box-shadow: 0px 0px 9px 2px #353535;
 }
 
-.list1 {
+.nav .list1 {
   border-radius: 0 0 13px 13px;
   text-align: center;
   height: 250px;
   width: 150px;
   position: absolute;
   top: 100%;
+
   display: none;
 }
 
@@ -42,9 +43,8 @@ h1 {
   margin: 150px auto 150px auto;
   border-radius: 130px;
   opacity: 0;
-
-  border-bottom: 1px solid ivory;
-  box-shadow: 0px 0px 9px 2px #353535;
+  border: 1px solid rgba(170, 170, 170, 0.3);
+  box-shadow: 30px 15px 20px 5px rgba(119, 119, 119, .3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,9 +71,10 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #333;
-}
+  border: 1px solid rgba(170, 170, 170, 0.3);
+  box-shadow: 30px 15px 20px 5px rgba(119, 119, 119, .3);
 
+}
 
 .fade-in{
   opacity: 1;
