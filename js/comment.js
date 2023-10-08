@@ -29,10 +29,12 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 const ref = collection(db, "comments");
+
 const submitBtn = document.querySelector("#submit_btn");
 const commentsBox = document.querySelector(".comments");
+const deleteBtn = document.querySelector(".comment__delete");
 
-async function comment() {
+async function submitComment() {
   const username = $("#username").val();
   const textarea = $("#textarea").val();
   const getDate = Timestamp.fromDate(new Date());
@@ -72,7 +74,7 @@ function addComment(docs) {
     <h2 class="comment__username">${userName}</h2>
     <div class="comment__contents">
       <span class="comment__text">${comment}</span>
-      <span id="comment__delete">❌</span>
+      <span class="comment__delete">❌</span>
     </div>
     <p class="comment__timestamp">${newDate.getFullYear()}년 ${
       newDate.getMonth() + 1
@@ -83,4 +85,13 @@ function addComment(docs) {
   });
 }
 
-submitBtn.addEventListener("click", comment);
+async function deleteComment() {
+  // const getData = doc(db, "comments", currentCommentId);
+  // const getDelDoc = await getDoc(getData);
+  // deleteDoc(getData);
+  // console.log(getData);
+  console.log("im clicked");
+}
+
+submitBtn.addEventListener("click", submitComment);
+deleteBtn.addEventListener("click", deleteComment);
