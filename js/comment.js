@@ -40,9 +40,11 @@ async function comment() {
   let doc = {
     username: username,
     textarea: textarea,
-    date: getDate.toDate(), //수정
+    date: getDate.toDate(),
   };
-  console.log(doc);
+  console.log(
+    `${doc.date.getHours()}:${doc.date.getMinutes()}:${doc.date.getSeconds()}`
+  );
   await addDoc(ref, doc);
   alert("저장 완료!");
 
@@ -58,6 +60,9 @@ function addComment(docs) {
     let comment = data.textarea;
     let userName = data.username;
     let createdDate = data.date;
+    let date = createdDate.seconds * 1000;
+    let newDate = new Date(date);
+
     // * 새로운 container element 추가하기
     const div = document.createElement("div");
 
@@ -69,7 +74,9 @@ function addComment(docs) {
       <span class="comment__text">${comment}</span>
       <span id="comment__delete">❌</span>
     </div>
-    <p class="comment__timestamp">${createdDate}</p>
+    <p class="comment__timestamp">${newDate.getFullYear()}년 ${
+      newDate.getMonth() + 1
+    }월 ${newDate.getDate()}일 ${newDate.getHours()}시 ${newDate.getMinutes()}분 ${newDate.getSeconds()}초</p>
   </div>`;
 
     commentsBox.append(div);
