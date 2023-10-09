@@ -85,9 +85,6 @@ function addComment(docs) {
 
 let currentCommentId = "";
 async function deleteComment() {
-  // const getDelDoc = await getDoc(getData);
-  // deleteDoc(getData);
-  // console.log(getData);
   document.querySelectorAll(".comment__delete").forEach((button) => {
     button.addEventListener("click", function (e) {
       currentCommentId = e.target.value;
