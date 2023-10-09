@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/image/tuna_icon.ico" />
     <link rel="stylesheet" href="../static/css/style.css" />
     <title>사조참치</title>
   </head>
-  <body id="top">
+  <body>
     <div class="page-change">
-      <nav class="nav" id="top">
+      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__btn">
             <span id="team-name">4JoChamChi</span>
@@ -17,9 +18,7 @@
             <a class="nav__link" href="index.html">홈</a>
           </li>
           <li class="nav__btn">
-            <a class="nav__link" href="card-page.html"
-              >우리팀 특징 및 규칙</a
-            >
+            <a class="nav__link" href="card-page.html">우리팀 특징 및 규칙</a>
           </li>
           <li class="nav__btn">
             <a class="nav__link" id="open">팀원 소개</a>
@@ -48,11 +47,11 @@
       </nav>
       <main>
         <!-- top 버튼 -->
-        <a class="top_btn" href="#top">
+        <div class="top_btn">
           <span class="material-symbols-outlined top_arrow">
             keyboard_double_arrow_up
           </span>
-        </a>
+        </div>
         <div class="inner">
           <!-- 카드 -->
           <div class="card-group">
@@ -66,13 +65,12 @@
             </div>
             <div class="introduce">
               <h3>김래준</h3>
-              <p>문과 노베이스로 코딩을 갓 배우기 시작한 김래준입니다.</p>
-              <br />
-              <p>절대로 중간에 포기하지 않고 끝까지 완주하겠습니다!!</p>
-              <br />
-              <p>사실 벌써 JS 함수 잘 모르겠어요...</p>
-              <br />
-              <p>근데 보다보면 눈에 익겠죠 ㅎ</p>
+              <div class="introduce__text">
+                <p>문과 노베이스로 코딩을 갓 배우기 시작한 김래준입니다.</p>
+                <p>절대로 중간에 포기하지 않고 끝까지 완주하겠습니다!!</p>
+                <p>사실 벌써 JS 함수 잘 모르겠어요...</p>
+                <p>근데 보다보면 눈에 익겠죠 ㅎ</p>
+              </div>
             </div>
           </div>
 
@@ -128,6 +126,8 @@
     <script src="../js/weather.js"></script>
     <script src="../js/introduce.js"></script>
     <script src="../js/nav-member-toggle.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/dark-mode.js"></script>
     <script
       src="https://kit.fontawesome.com/971fe645b6.js"
       crossorigin="anonymous"

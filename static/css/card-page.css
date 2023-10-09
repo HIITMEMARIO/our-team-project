@@ -1,3 +1,7 @@
+:root {
+  --box-shadow: 0px 8px 16px 0px #00000033;
+}
+
 body {
   font-size: 25px;
   font-weight: 600; 
@@ -31,21 +35,25 @@ h1 {
 }
 
 .memberlist > li:not(:first-child) {
+  padding-top: 10px;
+  margin-bottom: 10px;
   border-top:1px white solid;
 }
 .team {
   position: relative;
-  width: 1000px;
+  width: 1200px;
   height: 600px;
-  background-color: ivory;
+  color: white;
   margin: 150px auto 150px auto;
-  border-radius: 130px;
+  border-radius: 100px;
   opacity: 0;
-  border: 1px solid rgba(170, 170, 170, 0.3);
-  box-shadow: 30px 15px 20px 5px rgba(119, 119, 119, .3);
+
+  box-shadow: var(--box-shadow);
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-image: url("https://images.pexels.com/photos/1615681/pexels-photo-1615681.jpeg?auto=compress&cs=tinysrgb&w=1600");
 }
 
 .members {
@@ -54,7 +62,6 @@ h1 {
   justify-content: space-around;
   border-radius: 10px;
   top: -30px;
-  
 }
 
 .image {
@@ -64,21 +71,17 @@ h1 {
 }
 
 .member {
-  background-color: ivory;
+  background-color: #d4d4d4;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid rgba(170, 170, 170, 0.3);
-  box-shadow: 30px 15px 20px 5px rgba(119, 119, 119, .3);
-
+  box-shadow: var(--box-shadow);
 }
 
-.fade-in{
+.fade-in {
   opacity: 1;
 }
-
-
 
 .page-change {
   animation: change 1s ease;
@@ -86,12 +89,10 @@ h1 {
 
 @keyframes change {
   from {
-
     opacity: 0;
   }
 
   to {
-
     opacity: 1;
   }
 }

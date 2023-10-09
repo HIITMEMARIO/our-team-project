@@ -37,11 +37,12 @@
   cursor: pointer;
 }
 
-
 #list li {
   color: white;
   margin: 5px;
-  padding: 7px;
+}
+.memberlist {
+  overflow: visible;
 }
 
 .memberlist a,
@@ -49,6 +50,19 @@ a:link,
 a:visited {
   color: white;
   text-decoration: none;
+}
+.memberlist a {
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.memberlist a:hover {
+  background-color: white;
+  color: black;
 }
 
 #weather span {
