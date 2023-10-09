@@ -32,7 +32,7 @@ const ref = collection(db, "comments");
 
 const submitBtn = document.querySelector("#submit_btn");
 const commentsBox = document.querySelector(".comments");
-const deleteBtn = document.querySelector(".comment__delete");
+const deleteBtn = document.querySelectorAll(".comment__delete");
 
 async function submitComment() {
   const username = $("#username").val();
@@ -44,12 +44,9 @@ async function submitComment() {
     textarea: textarea,
     date: getDate.toDate(),
   };
-  console.log(
-    `${doc.date.getHours()}:${doc.date.getMinutes()}:${doc.date.getSeconds()}`
-  );
+
   await addDoc(ref, doc);
   alert("저장 완료!");
-
   window.location.reload();
 }
 
@@ -74,7 +71,7 @@ function addComment(docs) {
     <h2 class="comment__username">${userName}</h2>
     <div class="comment__contents">
       <span class="comment__text">${comment}</span>
-      <span class="comment__delete">❌</span>
+      <button value=${doc.id} class="comment__delete">❌</button>
     </div>
     <p class="comment__timestamp">${newDate.getFullYear()}년 ${
       newDate.getMonth() + 1
@@ -83,15 +80,32 @@ function addComment(docs) {
 
     commentsBox.append(div);
   });
+  deleteComment();
 }
 
+let currentCommentId = "";
 async function deleteComment() {
-  // const getData = doc(db, "comments", currentCommentId);
   // const getDelDoc = await getDoc(getData);
   // deleteDoc(getData);
   // console.log(getData);
-  console.log("im clicked");
+  document.querySelectorAll(".comment__delete").forEach((button) => {
+    button.addEventListener("click", function (e) {
+      currentCommentId = e.target.value;
+      const getData = doc(db, "comments", currentCommentId);
+      deleteDoc(getData)
+        .then(() => {
+          alert("삭제 완료!");
+          window.location.reload();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+  });
 }
 
 submitBtn.addEventListener("click", submitComment);
-deleteBtn.addEventListener("click", deleteComment);
+
+deleteBtn.forEach((icon) => {
+  icon.addEventListener("click", deleteComment);
+});
