@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../static/image/tuna_icon.ico" />
     <link rel="stylesheet" href="../static/css/style.css" />
     <title>사조참치</title>
   </head>
-  <body id="top">
+  <body>
     <div class="page-change">
-      <nav class="nav" id="top">
+      <nav class="nav">
         <ul class="nav__list">
           <li class="nav__btn">
             <span id="team-name">4JoChamChi</span>
@@ -46,32 +47,32 @@
       </nav>
       <main>
         <!-- top 버튼 -->
-        <a class="top_btn" href="#top">
+        <div class="top_btn">
           <span class="material-symbols-outlined top_arrow">
             keyboard_double_arrow_up
           </span>
-        </a>
+        </div>
         <div class="inner">
           <!-- 카드 -->
           <div class="card-group">
             <div class="introduce__github">
-              <a href="https://github.com/laejun-kim">
+              <a href="https://github.com/hyewon-han">
                 <i class="fa-brands fa-github fa-xl"></i>
               </a>
             </div>
             <div class="img">
-              <img
-                src="https://cdn.britannica.com/84/73184-050-05ED59CB/Sunflower-field-Fargo-North-Dakota.jpg"
-                alt="소개사진"
-              />
+              <img src="../static/image/hyewon2.jpeg" alt="소개사진" />
             </div>
             <div class="introduce">
               <h3>한혜원</h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos
-                aperiam aliquam autem rerum soluta aut explicabo provident,
-                cumque voluptatibus quam.
-              </p>
+              <div class="introduce__text">
+                <p>
+                  안녕하세요! 개발자라는 새로운 꿈을 꾸고 있는 한혜원 입니다 😀
+                </p>
+                <p>내배캠에서 5개월 동안 함께 꾸준히 성장하고 싶어요 😊</p>
+                <p>다같이 포기하지 않고 끝까지 완주합시다!💪</p>
+                <p>잘 부탁드립니다 🤗</p>
+              </div>
             </div>
           </div>
 
@@ -81,31 +82,38 @@
               <button type="button" class="btn tag-title btn-mbti">
                 MBTI >
               </button>
-              <button type="button" class="btn btn-mbti">#INFP</button>
+              <button type="button" class="btn btn-mbti">#ISFP</button>
+              <button type="button" class="btn btn-mbti">#INTP</button>
             </div>
             <div class="tag">
               <button type="button" class="btn tag-title btn-habit">
                 취미 >
               </button>
-              <button type="button" class="btn btn-habit">#넷플릭스</button>
-              <button type="button" class="btn btn-habit">#운동</button>
-              <button type="button" class="btn btn-habit">#영화보기</button>
+              <button type="button" class="btn btn-habit">#러닝</button>
               <button type="button" class="btn btn-habit">#독서</button>
+              <button type="button" class="btn btn-habit">#여행</button>
+              <button type="button" class="btn btn-habit">#등산</button>
             </div>
             <div class="tag">
               <button type="button" class="btn tag-title btn-strength">
                 장점 >
               </button>
-              <button type="button" class="btn btn-strength">#꾸준함</button>
-              <button type="button" class="btn btn-strength">#착함</button>
+              <button type="button" class="btn btn-strength">
+                #의자에오래앉아있기
+              </button>
+              <button type="button" class="btn btn-strength">
+                #무던하고긍정적인편
+              </button>
             </div>
             <div class="tag">
               <button type="button" class="btn tag-title btn-collaboration">
                 협업스타일 >
               </button>
-              <button type="button" class="btn btn-collaboration">#착함</button>
               <button type="button" class="btn btn-collaboration">
-                #의사소통잘함
+                #주어진일끝까지해냄
+              </button>
+              <button type="button" class="btn btn-collaboration">
+                #안되는건물어서라도해결
               </button>
             </div>
           </div>
@@ -122,6 +130,8 @@
     <script src="../js/weather.js"></script>
     <script src="../js/introduce.js"></script>
     <script src="../js/nav-member-toggle.js"></script>
+    <script src="../js/top-button.js"></script>
+    <script src="../js/dark-mode.js"></script>
     <script
       src="https://kit.fontawesome.com/971fe645b6.js"
       crossorigin="anonymous"
