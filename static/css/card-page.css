@@ -22,7 +22,6 @@ h1 {
   width: 150px;
   position: absolute;
   top: 100%;
-
   display: none;
 }
 
@@ -31,9 +30,8 @@ h1 {
   background-color: black;
 }
 
-.memberlist > li {
-  padding-top: 10px; 
-  margin-bottom: 10px;
+.memberlist > li:not(:first-child) {
+  border-top:1px white solid;
 }
 .team {
   position: relative;
