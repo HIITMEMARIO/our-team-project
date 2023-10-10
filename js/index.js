@@ -15,18 +15,13 @@ gsap.from(".text-icon", {
   duration: 2,
 });
 
+const buttonHoverEl = document.querySelector(".circle");
+const containerEl = document.querySelector(".container");
 
+buttonHoverEl.addEventListener("click", function () {
+  containerEl.classList.add("background");
 
-const buttonHoverEl = document.querySelector('.circle')
-const containerEl = document.querySelector('.container')
-
-
-buttonHoverEl.addEventListener('click', function () {
-  containerEl.classList.add('background')
-
-  setTimeout(function(){
-
-    location.href = 'card-page.html';
-    
-    }, 400);
-})
+  setTimeout(function () {
+    location.href = "../templates/card-page.html";
+  }, 400);
+});
