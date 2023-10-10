@@ -16,3 +16,5 @@ listbtn.addEventListener('click',function(event){
 window.addEventListener('click', function(){
   list.classList.remove('show')
 })
+
+

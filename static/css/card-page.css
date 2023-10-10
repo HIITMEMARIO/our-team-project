@@ -4,7 +4,7 @@
 
 body {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 600; 
 }
 
 h1 {
@@ -19,7 +19,7 @@ h1 {
   box-shadow: 0px 0px 9px 2px #353535;
 }
 
-.list1 {
+.nav .list1 {
   border-radius: 0 0 13px 13px;
   text-align: center;
   height: 250px;
@@ -34,9 +34,10 @@ h1 {
   background-color: black;
 }
 
-.memberlist > li {
+.memberlist > li:not(:first-child) {
   padding-top: 10px;
   margin-bottom: 10px;
+  border-top:1px white solid;
 }
 .team {
   position: relative;
