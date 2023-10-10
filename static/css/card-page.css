@@ -5,6 +5,7 @@
 body {
   font-size: 25px;
   font-weight: 600; 
+
 }
 
 h1 {
@@ -52,7 +53,9 @@ h1 {
   justify-content: center;
   align-items: center;
   background-image: url("https://images.pexels.com/photos/1615681/pexels-photo-1615681.jpeg?auto=compress&cs=tinysrgb&w=1600");
+  transition: all ease .5s;
 }
+
 
 .members {
   position: relative;
@@ -60,10 +63,13 @@ h1 {
   justify-content: space-around;
   border-radius: 10px;
   top: -30px;
+  transition: all ease .5s;
 
 }
 
+
 .image {
+  transition: all ease .5s;
   border-radius: 10px 10px 0 0;
   width: 200px;
   height: 300px;
