@@ -22,6 +22,6 @@ buttonHoverEl.addEventListener("click", function () {
   containerEl.classList.add("background");
 
   setTimeout(function () {
-    location.href = "../templates/card-page.html";
+    location.href = "templates/card-page.html";
   }, 400);
 });
