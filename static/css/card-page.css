@@ -42,7 +42,7 @@ h1 {
 }
 .team {
   position: relative;
-  width: 1200px;
+  width: 80%;
   height: 600px;
   color: white;
   margin: 150px auto 150px auto;
@@ -52,14 +52,16 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("https://images.pexels.com/photos/1615681/pexels-photo-1615681.jpeg?auto=compress&cs=tinysrgb&w=1600");
-  transition: all ease .5s;
+
+  background-image: url('https://images.pexels.com/photos/1615681/pexels-photo-1615681.jpeg?auto=compress&cs=tinysrgb&w=1600');
 }
 
 
 .members {
-  position: relative;
+  width: 100%;
+  /* position: relative; */
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 10px;
   top: -30px;
