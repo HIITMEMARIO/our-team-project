@@ -8,6 +8,13 @@ body {
 
 }
 
+.page-change{
+  transition: .4s;
+}
+
+.background {
+  opacity: 0;
+}
 h1 {
   display: flex;
   justify-content: center;
@@ -52,21 +59,17 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-image: url('https://images.pexels.com/photos/1615681/pexels-photo-1615681.jpeg?auto=compress&cs=tinysrgb&w=1600');
 }
 
 
 .members {
   width: 100%;
-  /* position: relative; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 10px;
-  top: -30px;
   transition: all ease .5s;
-
 }
 
 
@@ -75,7 +78,7 @@ h1 {
   border-radius: 10px 10px 0 0;
   width: 200px;
   height: 300px;
-
+  
 
 }
 
@@ -88,6 +91,7 @@ h1 {
   box-shadow: var(--box-shadow);
 
 }
+
 
 
 .fade-in {

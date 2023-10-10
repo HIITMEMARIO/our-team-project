@@ -19,8 +19,6 @@ gsap.from(".text-icon", {
 
 const buttonHoverEl = document.querySelector('.circle')
 const containerEl = document.querySelector('.container')
-// const IconEl = document.querySelector('.material-symbols-outlined')
-// const textEl = document.querySelector('.font-position')
 
 
 buttonHoverEl.addEventListener('click', function () {
