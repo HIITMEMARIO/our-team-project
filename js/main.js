@@ -35,21 +35,15 @@ fadeTeamEls.forEach(function (fadeEl, index) {
   });
 });
 
+const buttonHoverEl = document.querySelector(".circle");
+const containerEl = document.querySelector(".container");
+const IconEl = document.querySelector(".material-symbols-outlined");
+const textEl = document.querySelector(".font-position");
 
+buttonHoverEl.addEventListener("click", function () {
+  containerEl.classList.add("background");
 
-
-const buttonHoverEl = document.querySelector('.circle')
-const containerEl = document.querySelector('.container')
-const IconEl = document.querySelector('.material-symbols-outlined')
-const textEl = document.querySelector('.font-position')
-
-
-buttonHoverEl.addEventListener('click', function () {
-  containerEl.classList.add('background')
-
-  setTimeout(function(){
-
-    location.href = 'card-page.html';
-    
-    }, 400);
-})
+  setTimeout(function () {
+    location.href = "card-page.html";
+  }, 400);
+});
