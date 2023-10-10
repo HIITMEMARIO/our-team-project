@@ -1,6 +1,5 @@
-body {
+body{
   font-family: "Nanum Gothic", sans-serif;
-
 }
 
 
@@ -16,11 +15,9 @@ body {
   background-size: cover;
   transition: 400ms ease-in;
 }
-
 /* 중앙 참치 이미지 */
 
 .circle {
-  opacity: 0;
   transition: .1s ease-in;
   border: 1px solid #0871c7;
   border-radius: 50%;
@@ -39,18 +36,9 @@ body {
   box-shadow: 0px 8px 10px 10px rgb(44, 43, 43);
 
 }
-.material-symbols-outlined.text-hover {
-  color: black 
-}
-
-.font-position.text-hover{
-  color: black 
-}
-
 
 .background {
   opacity: 0;
-
 }
 
 .text-icon {
@@ -76,14 +64,5 @@ body {
 
 .page-change {
   animation: page-change 1s ease;
-}
-
-@keyframes page-change {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
