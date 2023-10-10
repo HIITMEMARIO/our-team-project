@@ -4,7 +4,7 @@
 
 body {
   font-size: 25px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 h1 {
@@ -37,7 +37,7 @@ h1 {
 .memberlist > li:not(:first-child) {
   padding-top: 10px;
   margin-bottom: 10px;
-  border-top:1px white solid;
+  border-top: 1px white solid;
 }
 .team {
   position: relative;
