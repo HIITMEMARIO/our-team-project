@@ -5,7 +5,7 @@ backBtn.addEventListener("click", () => {
   pageChangeEl.classList.add('background')
   setTimeout(function(){
 
-    location.href = 'card-page.html';
+    location.href = '../card-page.html';
     
     }, 400);
 });
@@ -14,7 +14,7 @@ homeBtn.addEventListener("click", () => {
   pageChangeEl.classList.add('background')
   setTimeout(function(){
 
-    location.href = 'index.html';
+    location.href = '../index.html';
     
     }, 400);
 });

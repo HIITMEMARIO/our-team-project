@@ -20,7 +20,7 @@ member1Btn.addEventListener("click", () => {
   pageChangeEl.classList.add('background')
   setTimeout(function(){
 
-    location.href = 'introduce.html';
+    location.href = '../introduce.html';
     
     }, 400);
 });
@@ -29,7 +29,7 @@ member2Btn.addEventListener("click", () => {
   pageChangeEl.classList.add('background')
   setTimeout(function(){
 
-    location.href = 'introduce2.html';
+    location.href = '../introduce2.html';
     
     }, 400);
 });
@@ -38,7 +38,7 @@ member3Btn.addEventListener("click", () => {
   pageChangeEl.classList.add('background')
   setTimeout(function(){
 
-    location.href = 'introduce3.html';
+    location.href = '../introduce3.html';
     
     }, 400);
 });
@@ -47,7 +47,7 @@ member4Btn.addEventListener("click", () => {
   pageChangeEl.classList.add('background')
   setTimeout(function(){
 
-    location.href = 'introduce4.html';
+    location.href = '../introduce4.html';
     
     }, 400);
 });
@@ -56,7 +56,7 @@ member5Btn.addEventListener("click", () => {
   pageChangeEl.classList.add('background')
   setTimeout(function(){
 
-    location.href = 'introduce5.html';
+    location.href = '../introduce5.html';
     
     }, 400);
 });
