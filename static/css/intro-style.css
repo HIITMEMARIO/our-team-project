@@ -1,5 +1,5 @@
 /* 모드별 색상 */
-:root[color-theme='dark'] {
+:root[color-theme="dark"] {
   --background: #000;
   --card-bg: #fff;
   --font-color: #fff;
@@ -8,7 +8,7 @@
   --tag-border: #fff;
 }
 
-:root[color-theme='light'] {
+:root[color-theme="light"] {
   --black: #fff;
   --card-bg: #d4d4d4;
   --white: #000;
@@ -30,7 +30,7 @@
 
 body {
   background-color: var(--background);
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
 }
 
 main {
@@ -116,6 +116,7 @@ main {
 
 .introduce {
   width: 50%;
+  padding-bottom: 30px;
 }
 
 .introduce__text {
