@@ -154,6 +154,7 @@ h1 {
 .modalContent {
   position: absolute;
   background-color: #ffffff;
+  opacity: 0.85;
   color: black;
   width: 600px;
   height: 400px;
