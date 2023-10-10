@@ -4,9 +4,17 @@
 
 body {
   font-size: 25px;
-  font-weight: 600;
+  font-weight: 600; 
+
 }
 
+.page-change{
+  transition: .4s;
+}
+
+.background {
+  opacity: 0;
+}
 h1 {
   display: flex;
   justify-content: center;
@@ -37,7 +45,7 @@ h1 {
 .memberlist > li:not(:first-child) {
   padding-top: 10px;
   margin-bottom: 10px;
-  border-top: 1px white solid;
+  border-top:1px white solid;
 }
 
 .team {
@@ -48,7 +56,6 @@ h1 {
   margin: 150px auto 150px auto;
   border-radius: 100px;
   opacity: 0;
-
   box-shadow: var(--box-shadow);
   display: flex;
   flex-direction: column;
@@ -67,20 +74,24 @@ h1 {
   font-weight: bolder;
 }
 
+
 .members {
   width: 100%;
-  /* position: relative; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   border-radius: 10px;
-  top: -30px;
+  transition: all ease .5s;
 }
 
+
 .image {
+  transition: all ease .5s;
   border-radius: 10px 10px 0 0;
   width: 200px;
   height: 300px;
+  
+
 }
 
 .member {
@@ -90,7 +101,10 @@ h1 {
   flex-direction: column;
   align-items: center;
   box-shadow: var(--box-shadow);
+
 }
+
+
 
 .fade-in {
   opacity: 1;
@@ -152,6 +166,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background: rgba(0, 0, 0, 0.5);
+  z-index: 9;
 }
 
 .modalContent {
