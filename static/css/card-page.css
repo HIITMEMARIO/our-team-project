@@ -62,12 +62,14 @@ h1 {
   justify-content: space-around;
   border-radius: 10px;
   top: -30px;
+  
 }
 
 .image {
   border-radius: 10px 10px 0 0;
   width: 200px;
   height: 300px;
+  
 }
 
 .member {

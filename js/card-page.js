@@ -1,8 +1,8 @@
-const member1Btn = document.getElementById("member1_btn");
-const member2Btn = document.getElementById("member2_btn");
-const member3Btn = document.getElementById("member3_btn");
-const member4Btn = document.getElementById("member4_btn");
-const member5Btn = document.getElementById("member5_btn");
+const member1Btn = document.getElementById("member1_btn")
+const member2Btn = document.getElementById("member2_btn")
+const member3Btn = document.getElementById("member3_btn")
+const member4Btn = document.getElementById("member4_btn")
+const member5Btn = document.getElementById("member5_btn")
 
 
 member1Btn.addEventListener("click", () => {

@@ -50,7 +50,7 @@ body {
 
 .background {
   opacity: 0;
-
+  
 }
 
 .text-icon {
@@ -76,14 +76,5 @@ body {
 
 .page-change {
   animation: page-change 1s ease;
-}
-
-@keyframes page-change {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
