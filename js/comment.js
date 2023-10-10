@@ -28,30 +28,40 @@ const firebaseConfig = {
 // Firebase 인스턴스 초기화
 const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
+const ref = collection(db, "comments");
+
 const submitBtn = document.querySelector("#submit_btn");
 const commentsBox = document.querySelector(".comments");
+const deleteBtn = document.querySelectorAll(".comment__delete");
 
-async function comment() {
+async function submitComment() {
   const username = $("#username").val();
   const textarea = $("#textarea").val();
+  const getDate = Timestamp.fromDate(new Date());
 
-  let doc = { username: username, textarea: textarea };
-  const commentref = collection(db, "comments");
-  await addDoc(commentref, doc);
+  let doc = {
+    username: username,
+    textarea: textarea,
+    date: getDate.toDate(),
+  };
+
+  await addDoc(ref, doc);
   alert("저장 완료!");
-
   window.location.reload();
 }
 
-let docs = await getDocs(collection(db, "comments"));
+const docs = await getDocs(query(ref, orderBy("date", "desc")));
 addComment(docs);
 
 function addComment(docs) {
   docs.forEach((doc) => {
     let data = doc.data();
-    console.log(data);
     let comment = data.textarea;
     let userName = data.username;
+    let createdDate = data.date;
+    let date = createdDate.seconds * 1000;
+    let newDate = new Date(date);
+
     // * 새로운 container element 추가하기
     const div = document.createElement("div");
 
@@ -61,30 +71,38 @@ function addComment(docs) {
     <h2 class="comment__username">${userName}</h2>
     <div class="comment__contents">
       <span class="comment__text">${comment}</span>
-      <span id="comment__delete">❌</span>
+      <button value=${doc.id} class="comment__delete">❌</button>
     </div>
+    <p class="comment__timestamp">${newDate.getFullYear()}년 ${
+      newDate.getMonth() + 1
+    }월 ${newDate.getDate()}일 ${newDate.getHours()}시 ${newDate.getMinutes()}분 ${newDate.getSeconds()}초</p>
   </div>`;
 
     commentsBox.append(div);
   });
+  deleteComment();
 }
 
-submitBtn.addEventListener("click", comment);
+let currentCommentId = "";
+async function deleteComment() {
+  document.querySelectorAll(".comment__delete").forEach((button) => {
+    button.addEventListener("click", function (e) {
+      currentCommentId = e.target.value;
+      const getData = doc(db, "comments", currentCommentId);
+      deleteDoc(getData)
+        .then(() => {
+          alert("삭제 완료!");
+          window.location.reload();
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    });
+  });
+}
 
-// let docs = await getDocs(collection(db, "comments"));
-// docs.forEach((doc) => {
-//   let row = doc.data();
-//   const username = row["username"];
-//   const textarea = row["textarea"];
-// });
+submitBtn.addEventListener("click", submitComment);
 
-// $("#submit_btn").click(async function () {
-//   console.log("hello");
-//   const username = $("#username").val();
-//   const textarea = $("#textarea").val();
-
-//   let doc = { username: username, textarea: textarea };
-//   await addDoc(collection(db, "comments"), doc);
-//   alert("저장 완료!");
-//   window.location.reload();
-// });
+deleteBtn.forEach((icon) => {
+  icon.addEventListener("click", deleteComment);
+});

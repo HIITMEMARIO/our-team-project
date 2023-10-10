@@ -14,14 +14,14 @@ body {
   background-image: url("https://images.pexels.com/photos/1615681/pexels-photo-1615681.jpeg?auto=compress&cs=tinysrgb&w=1600");
   background-position: center;
   background-size: cover;
+  transition: 400ms ease-in;
 }
-
 
 /* 중앙 참치 이미지 */
 
 .circle {
   opacity: 0;
-  transition: .3s;
+  transition: .1s ease-in;
   border: 1px solid #0871c7;
   border-radius: 50%;
   width: 300px;
@@ -29,49 +29,43 @@ body {
   background-image: url("https://i.namu.wiki/i/OtQ7RAxKcYGW2wcPxCGaPI7C9MBgmZhr1FeChqVs7mesqE_uVp8rzdkWGt-y5x_lN5Tk2GzRnZXAQ0E1U_7JaQ.webp");
   background-position: center;
   background-size: cover;
-
+  cursor: pointer;
 }
+
 
 .circle:hover {
   width: 350px;
   height: 350px;
   box-shadow: 0px 8px 10px 10px rgb(44, 43, 43);
-  
-  
-}
-
-/* 클릭시 카드페이지 이동 */
-
-.to-card-page {
-  display: flex;
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  transition: .3s;
 
 }
+.material-symbols-outlined.text-hover {
+  color: black 
+}
 
-.to-card-page:hover {
-  width: 350px;
-  height: 350px;
+.font-position.text-hover{
+  color: black 
+}
 
+
+.background {
+  opacity: 0;
 
 }
 
 .text-icon {
-
   position: absolute;
   text-align: center;
   bottom: 140px;
 }
 
 .material-symbols-outlined {
-  
   font-size: 28px;
   color: #fff;
 }
 
 .font-position {
+
   color: #fff;
   font-size: 15px;
   bottom: 100px;
@@ -80,9 +74,8 @@ body {
 
 
 
-
 .page-change {
-  animation: page-change 2s ease;
+  animation: page-change 1s ease;
 }
 
 @keyframes page-change {

@@ -4,6 +4,7 @@ const member3Btn = document.getElementById("member3_btn");
 const member4Btn = document.getElementById("member4_btn");
 const member5Btn = document.getElementById("member5_btn");
 
+
 member1Btn.addEventListener("click", () => {
   location.href = "introduce.html";
 });
@@ -23,3 +24,4 @@ member4Btn.addEventListener("click", () => {
 member5Btn.addEventListener("click", () => {
   location.href = "introduce5.html";
 });
+
